@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/kul-boa/sample-may.git'
+                git 'https://github.com/sushom/sample-may_2.git'
                 sh "mvn clean install"
             }
             post {
