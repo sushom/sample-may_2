@@ -16,7 +16,9 @@ pipeline {
             }
         }
         stage('Deploy') {
-            sh 'cp target/my-webapp.war ~/tomcat/webapps/sushom.war'
+            steps {
+                sh 'cp target/my-webapp.war ~/tomcat/webapps/sushom.war'
+            }    
         }    
     }
 }
